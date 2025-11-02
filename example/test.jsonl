@@ -1,2 +1,5 @@
 {"song_name":"song1","style_prompt": "Pop, Piano, Bass, Drums, Happy", "lyrics":"example/lrc/1.lrc"}
 {"style_prompt": "example/prompt/2.wav", "lyrics":"example/lrc/1.lrc"}
+{"song_name":"instrumental-1-folk","style_prompt": "folk, acoustic guitar, harmonica, touching", "lyrics":"example/lrc/instrumental.lrc"}
+{"song_name":"instrumental-2-electronic","style_prompt": "energetic, electronic, upbeat", "lyrics":"example/lrc/instrumental.lrc"}
+{"song_name":"instrumental-3-pop","style_prompt": "pop, rock, melancholy, acoustic guitar, piano, cello", "lyrics":"example/lrc/instrumental.lrc"}

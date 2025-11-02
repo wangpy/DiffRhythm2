@@ -128,11 +128,15 @@ def parse_lyrics(lyrics: str):
     lyrics_with_time = []
     lyrics = lyrics.split("\n")
     for line in lyrics:
+        line = line.strip()
+        # Skip empty lines
+        if not line:
+            continue
         struct_idx = STRUCT_INFO.get(line, None)
         if struct_idx is not None:
             lyrics_with_time.append([struct_idx, STRUCT_INFO['[stop]']])
         else:
-            tokens = lrc_tokenizer.encode(line.strip())
+            tokens = lrc_tokenizer.encode(line)
             tokens = tokens + [STRUCT_INFO['[stop]']]
             lyrics_with_time.append(tokens)
     return lyrics_with_time
